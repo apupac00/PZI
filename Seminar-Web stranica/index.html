@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>RAFTING</title>
+
+  <!-- Povezivanje CSS na HTML-->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/lightbox.min.css" />
+  <!-- Link za dodavanje ikona -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+
+  <!-- Google fontovi - Roboto-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ***************** Zaglavlje *******************  -->
+
+  <header id="POČETNA">
+    <h1>RAFTING CETINA</h1>
+    <nav>
+      <a href="#POČETNA"> Početna</a>
+      <a href="informacije.html"> Informacije</a>
+      <a href="#CJENIK">Cjenik</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="#KONTAKT">Kontakt</a>
+    </nav>
+  </header>
+
+  <!--********************* Glavni dio HTML-a *********************-->
+
+  <main>
+    <!-- ******************* Slide prikaza slika **************** -->
+    <section class="slideshow-container">
+      <div class="mySlides">
+        <img class="img1" src="./images/threePictureSlide/pexels-photo-247474-1200x800.jpg" alt="Rafting" />
+        <div class="text">
+          <h2>Dobrodošli na stranicu</h2>
+          <h2>RAFTING CETINA</h2>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img class="img1" src="./images/threePictureSlide/pexels-photo-1615766.jpeg" alt="Rafting" />
+        <div class="text">
+          <h2>Provedi svoje vrijeme u prirodi</h2>
+          <h2>DOŽIVI NEZABORAVNO ISKUSTVO</h2>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img class="img1" src="./images/threePictureSlide/pexels-photo-1732280.jpeg" alt="Rafting" />
+        <div class="text">
+          <h2>Svjež zrak i miris prirode</h2>
+          <h2>PRIDRUŽI NAM SE!</h2>
+        </div>
+      </div>
+      <br />
+      <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- ****************** Avantura života *********************-->
+    <section class="avantura-zivota">
+      <div class="avanturaPrirodaUspomene">
+        <img class="img2" src="./images/img1.jpg" alt="RAFTING-AVANTURA" />
+        <div>
+          <h2>Doživi avanturu</h2>
+          <p>
+            Doživite adrenalin u kanjonu rijeke Cetine! Sa brojim brzacima
+            kojima vijuga ova rijeka upoznat ćete i one najzabavnije i
+            najuzbudljivije: Bomba, Ferrari i Javrnicu
+          </p>
+        </div>
+      </div>
+
+      <div class="avanturaPrirodaUspomene">
+        <img class="img2" src="./images/img2.jpeg" alt="UŽIVAJ-U-PRIRODI" />
+        <div>
+          <h2>Uživaj u prirodi</h2>
+          <p>
+            Cetina ima jedan od najljepših kanjona u Hrvatskoj. I dok vas
+            okružuju očaravajuće krške stijene, primjetit ćete raznovrsne
+            biljke te stanovnike naše rijeke, brojne ribe, kornjače i patke
+          </p>
+        </div>
+      </div>
+
+      <div class="avanturaPrirodaUspomene">
+        <img class="img2" src="./images/img3.jpeg" alt="PONESI-USPOMENU" />
+        <div>
+          <h2>Ponesi uspomenu</h2>
+          <p>
+            Sa sobom možete ponijeti i uspomene sa raftinga jer nas uglavnom
+            slijedi i naš fotograf u kajaku, a ne zaboravite podijeliti svoje
+            dojmove i doživljaje sa nama
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************** CJENIK ************************ -->
+    <section id="CJENIK">
+      <h2>Cjenik</h2>
+      <div class="crvenaCrta"></div>
+      <table>
+        <tr>
+          <th>Udaljenost</th>
+          <th>&nbspCijena po osobi</th>
+          <th>&nbspVrijeme polaska</th>
+        </tr>
+        <tr>
+          <td>Velika tura(8km)</td>
+          <td>200kn</td>
+          <td>8h</td>
+
+        </tr>
+        <tr>
+          <td>Mala tura(5km)</td>
+          <td>150kn</td>
+          <td>14h</td>
+        </tr>
+      </table>
+
+    </section>
+
+    <!--*********************** KONTAKT *************************-->
+    <section id="KONTAKT">
+      <h2>Kontaktirajte nas</h2>
+      <div class="crvenaCrta"></div>
+      <div class="alert">Vaša poruka je poslana
+        <p>Odgovor će te dobit u najkraćem roku</p>
+      </div>
+      <form id="contactForm">
+        <div class="kontakt1">
+          <label for="name">*Ime</label>
+          <input type="text" name="name" placeholder="Pasko" id="name" required />
+        </div>
+        <div class="kontakt1">
+          <label for="telefon">*Telefon</label>
+          <input type="text" name="telefon" placeholder="+385 xx xxx xxxx" id="phone" />
+        </div>
+        <div class="kontakt1">
+          <label for="email">*Email</label>
+          <input type="text" name="email" placeholder="example@gmail.com" id="email" required />
+        </div>
+        <div class="kontakt1">
+          <label for="Poruka">*Poruka</label>
+          <textarea id="message" name="poruka" rows="5"
+            placeholder="Ukupan broj gostiju, datum dolaska, dodatne infromacije..."></textarea>
+        </div>
+        <button type="submit"> Pošalji</button>
+      </form>
+    </section>
+
+    <!----------------- Karta ----------------->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7144.975892380211!2d16.85138210860255!3d43.427711683064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a9599a5d87e7f%3A0xf7a9fd6acee9d3cb!2sRafting-Cetina%20KENTONA!5e0!3m2!1shr!2shr!4v1577115574906!5m2!1shr!2shr"
+      width="100%" height="400" frameborder="0" style="border:1px solid black;" allowfullscreen=""></iframe>
+  </main>
+
+  <!--  *************** Podnožje ***************************** -->
+  <footer>
+    <!-- Linkovi na Facebook, Instagram, Email -->
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/?hl=hr"><i class="fab fa-instagram"></i></a>
+      <a
+        href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=0&client-request-id=a55fa09b-61e9-4456-8604-69a657d7285a&protectedtoken=true&nonce=637127095488905329.3405b011-00f2-402d-82a3-1f234c4e34fe&state=Dcs5FoAgDEXRoMflRH4GBJaDA62l2zfFfd1LRLSGJSREqB5WRSt68dY6imnfzVFOiDAwlR16c9NhLFPNL3_M55Pi3fL7jfwD&sso_reload=true"><i
+          class="fas fa-envelope"></i></a>
+    </div>
+    <h2>RAFTING CETINA</h2>
+    <div>
+      &copy;<i>2019, Sva prava pridržana</i>
+      <p>Ante Pupačić</p>
+    </div>
+  </footer>
+  <!-- ************* Povezivanje JavaScripte na HTML ***************-->
+
+  <script src="./js/javaScript.js"></script>
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+  <script src="./js/firebase.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+
+/* -------- Definiranje fonta ----------*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ---------------Zaglavlje------------*/
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #333;
+    height: 70px;
+}
+
+header>h1{
+    padding-left: 10px;
+    color:white;
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+}
+
+nav>a{
+    padding: 12px 12px;
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+nav>a:hover{
+    color:green;
+}
+
+@media screen and (max-width: 730px){
+  header{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80px;
+  }
+  nav>a{
+    display:inline-block;
+  }
+}@media screen and (max-width: 430px){
+header{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+}
+  nav>a{
+  display:inline-block;
+}
+}
+
+/* ------------Podešavanje crte----------- */
+.crvenaCrta{
+    margin: auto;
+    height: 5px;
+    width: 300px;
+    background-color:red;
+    margin-bottom: 50px;
+}
+/*------------Galerija-----------*/
+#GALERIJA{
+    margin-bottom: 200px;
+}
+#GALERIJA>h2{
+    font-size: 30px;
+    margin-top:100px;
+}
+.gallery{
+    margin: 50px 10px;
+}
+.gallery img{
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+  .gallery img:hover{
+    -webkit-transform: scale(1.1) ;
+        -ms-transform: scale(1.1) ;
+            transform: scale(1.1) ;
+}
+/*------------Podnožje--------------*/
+footer{
+margin-top: -4px;
+background-color:#333;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+footer>h2{
+font-size: 30px;
+margin-top: 0px;
+color:white;
+transform: rotate(-5deg);
+}
+footer>div{
+margin-top: 30px;
+margin-bottom: 30px;
+color:white;
+}
+.footer-icons > a{
+margin: 0px 30px;
+color: white;
+font-size: 35px;
+}
+.footer-icons>a:hover {
+color: green;
+}
+
